@@ -8,7 +8,7 @@ function Footer() {
             <div className="relative z-10 mx-auto max-w-7xl px-4">
                         <div className="flex h-full flex-row justify-between">
                             <div className="mb-4 inline-flex items-center">
-                                <Logo width="100px" />
+                                <Logo width="50px" />
                             </div>
                             <div>
                                 <p className="text-sm text-white">
