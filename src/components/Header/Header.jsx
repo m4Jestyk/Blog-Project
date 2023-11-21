@@ -14,25 +14,20 @@ function Header() {
       slug: "/",
       active: true
     }, 
-    {
-      name: "Login",
-      slug: "/login",
-      active: !authStatus,
+  {
+    name: "All Posts",
+    slug: "/all-posts",
+    active: true,
+  },
+  {
+    name: "Add Post",
+    slug: "/add-post",
+    active: authStatus,
   },
   {
       name: "Signup",
       slug: "/signup",
       active: !authStatus,
-  },
-  {
-      name: "All Posts",
-      slug: "/all-posts",
-      active: authStatus,
-  },
-  {
-      name: "Add Post",
-      slug: "/add-post",
-      active: authStatus,
   },
   ]
 
@@ -41,11 +36,13 @@ function Header() {
     <header className='py-3 shadow bg-black text-white rounded-3xl'>
       <Container>
         <nav className='flex justify-between'>
+          
           <div className='mr-4'>
             <Link to='/'>
               <Logo width='40px'   />
             </Link>
           </div>
+
           <div>
           <ul className='flex ml-auto'>
             {navItems.map((item) => 
@@ -67,8 +64,10 @@ function Header() {
                 <LogoutBtn />
               </div>
             ) : (
-              <div>
-                Profile
+              <div onClick={() => navigate("/login")}
+              className='cursor-pointer inline-bock px-6 py-2 duration-200 hover:text-white rounded-full hover:bg-blue-500 hover:rounded-3xl'
+              >
+                Login
               </div>
             )
           }

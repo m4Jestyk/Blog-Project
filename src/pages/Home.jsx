@@ -1,5 +1,5 @@
 import React, {useEffect, useState} from 'react'
-import appwriteService from "../appwrite/config";
+import appwriteService from "../appwrite/config"; 
 import {Container, PostCard} from '../components'
 
 function Home() {
@@ -29,7 +29,15 @@ function Home() {
         )
     }
     return (
-        <div className='w-full py-8'>
+        <div className='w-full py-8 '>
+            {/* <Container>
+                <div className='text-white w-full border-red-600 border-x-2 border-y-2 rounded-xl'>
+                    <div className='w-1/2'>
+                        <h1>Welcome to</h1>
+                        <h1>Blogg</h1>
+                    </div>
+                </div>
+            </Container> */}
             <Container>
                 <div className='flex flex-wrap'>
                     {posts.map((post) => (

@@ -16,7 +16,7 @@ function PostCard({ $id, title, featuredImage }) {
   return (
     
       <div
-        className={`w-full bg-black rounded-xl text-white hover:text-black p-4 hover:bg-[#ffffff] transition-all duration-300 ease-in-out ${
+        className={`w-full bg-black rounded-xl text-white hover:text-black p-4 hover:bg-[#FAF9F6] transition-all duration-300 ease-in-out ${
           isMouseOver ? `h-[380px]` : `h-[200px]`
         }`}
         onMouseEnter={handleMouseEnter}
